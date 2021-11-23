@@ -15,19 +15,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let myLayer = CAGradientLayer()
+        myLayer.frame = view.bounds
+        myLayer.colors = [UIColor.white.cgColor,UIColor.systemBlue.cgColor]
+        myLayer.startPoint = CGPoint(x: 0,y: 0)
+        myLayer.endPoint = CGPoint(x: 1,y: 1)
+        view.layer.addSublayer(myLayer)
+        
         addmoto()
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(viewTransform))
         motoView.addGestureRecognizer(panGesture)
-        
     }
     
     func addmoto() {
         
         let viewFrame = UIScreen.main.bounds
         var motoTransform = CATransform3DIdentity
-        
-        motoView.frame = CGRect(x: 0, y: viewFrame.maxY / 2 - 50, width: viewFrame.width, height: 100)
-        
+        //
+        motoView.frame = CGRect(x: 0, y: viewFrame.maxY / 2 - 250, width: viewFrame.width, height: 200)
         // create moto 3D View
         let moto0 = UIImageView.init(image: UIImage(named: "moto-0"))
         moto0.frame = CGRect(x: viewFrame.maxX / 2 - 100, y: 0, width: 200, height: 200)
@@ -50,12 +55,11 @@ class ViewController: UIViewController {
         motoTransform = CATransform3DRotate(CATransform3DIdentity, (CGFloat.pi / 2), 0, 1, 0)
         motoTransform = CATransform3DTranslate(motoTransform, 0, 0, 100)
         moto3.layer.transform = motoTransform
-        
+
         motoView.addSubview(moto0)
         motoView.addSubview(moto1)
         motoView.addSubview(moto2)
         motoView.addSubview(moto3)
-        
         view.addSubview(motoView)
     }
     
@@ -76,8 +80,10 @@ class ViewController: UIViewController {
     
 }
 
+
 // 3D view moto-2  水平顛倒
-// 觸控view可控制面積與圖片大小不一樣
+// 觸碰第一下view尺寸會放大
+
 
 
 // reference: https://www.appcoda.com.tw/catransform3d/
