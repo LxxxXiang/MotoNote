@@ -14,6 +14,8 @@
 		024CD3552748D95000E617FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024CD3542748D95000E617FB /* Assets.xcassets */; };
 		024CD3582748D95000E617FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024CD3562748D95000E617FB /* LaunchScreen.storyboard */; };
 		02A64EA6274CC04600A7C3D8 /* MyMainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A64EA5274CC04600A7C3D8 /* MyMainCollectionView.swift */; };
+		02BC3C86274DD1BD00E7A563 /* CollectionViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3C85274DD1BD00E7A563 /* CollectionViewTest.swift */; };
+		02BC3C8A274E2B6F00E7A563 /* TableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC3C89274E2B6F00E7A563 /* TableViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		024CD3572748D95000E617FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		024CD3592748D95000E617FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02A64EA5274CC04600A7C3D8 /* MyMainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainCollectionView.swift; sourceTree = "<group>"; };
+		02BC3C85274DD1BD00E7A563 /* CollectionViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTest.swift; sourceTree = "<group>"; };
+		02BC3C89274E2B6F00E7A563 /* TableViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				024CD3542748D95000E617FB /* Assets.xcassets */,
 				024CD3562748D95000E617FB /* LaunchScreen.storyboard */,
 				024CD3592748D95000E617FB /* Info.plist */,
+				02BC3C85274DD1BD00E7A563 /* CollectionViewTest.swift */,
+				02BC3C89274E2B6F00E7A563 /* TableViewTest.swift */,
 			);
 			path = MotoNote;
 			sourceTree = "<group>";
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				024CD3502748D95000E617FB /* ViewController.swift in Sources */,
+				02BC3C86274DD1BD00E7A563 /* CollectionViewTest.swift in Sources */,
 				024CD34C2748D95000E617FB /* AppDelegate.swift in Sources */,
+				02BC3C8A274E2B6F00E7A563 /* TableViewTest.swift in Sources */,
 				024CD34E2748D95000E617FB /* SceneDelegate.swift in Sources */,
 				02A64EA6274CC04600A7C3D8 /* MyMainCollectionView.swift in Sources */,
 			);
